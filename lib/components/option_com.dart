@@ -29,8 +29,16 @@ class _OptionCompState extends State<OptionComp> {
             },
             child: Container(
               child: pernah == false
-                  ? Image.asset("assets/no.png")
-                  : Image.asset("assets/yes.png"),
+                  ? Icon(
+                      Icons.check_circle,
+                      color: Colors.grey[300],
+                      size: 35,
+                    )
+                  : const Icon(
+                      Icons.check_circle,
+                      color: Colors.blue,
+                      size: 35,
+                    ),
               color: Colors.transparent,
             ),
           ),
@@ -43,7 +51,7 @@ class _OptionCompState extends State<OptionComp> {
                 fontWeight: FontWeight.normal,
               )),
           SizedBox(
-            width: MediaQuery.of(context).size.width / 3.5,
+            width: MediaQuery.of(context).size.width / 4,
           ),
           InkWell(
             onTap: () {
@@ -59,8 +67,16 @@ class _OptionCompState extends State<OptionComp> {
             },
             child: Container(
               child: tidakp == false
-                  ? Image.asset("assets/no.png")
-                  : Image.asset("assets/yes.png"),
+                  ? Icon(
+                      Icons.check_circle,
+                      color: Colors.grey[300],
+                      size: 35,
+                    )
+                  : const Icon(
+                      Icons.check_circle,
+                      color: Colors.blue,
+                      size: 35,
+                    ),
               color: Colors.transparent,
             ),
           ),
@@ -122,8 +138,16 @@ class _OptionSingleState extends State<OptionSingle> {
             },
             child: Container(
               child: pernah == false
-                  ? Image.asset("assets/no.png")
-                  : Image.asset("assets/yes.png"),
+                  ? Icon(
+                      Icons.check_circle,
+                      color: Colors.grey[300],
+                      size: 35,
+                    )
+                  : const Icon(
+                      Icons.check_circle,
+                      color: Colors.blue,
+                      size: 35,
+                    ),
               color: Colors.transparent,
             ),
           ),
@@ -140,7 +164,7 @@ class _OptionSingleState extends State<OptionSingle> {
                 )),
           ),
           SizedBox(
-            width: MediaQuery.of(context).size.width / 6,
+            width: MediaQuery.of(context).size.width / 7,
           ),
           InkWell(
             onTap: () {
@@ -156,8 +180,16 @@ class _OptionSingleState extends State<OptionSingle> {
             },
             child: Container(
               child: pernah2 == false
-                  ? Image.asset("assets/no.png")
-                  : Image.asset("assets/yes.png"),
+                  ? Icon(
+                      Icons.check_circle,
+                      color: Colors.grey[300],
+                      size: 35,
+                    )
+                  : const Icon(
+                      Icons.check_circle,
+                      color: Colors.blue,
+                      size: 35,
+                    ),
               color: Colors.transparent,
             ),
           ),
