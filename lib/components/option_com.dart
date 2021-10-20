@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class OptionComp extends StatefulWidget {
-  const OptionComp({Key? key}) : super(key: key);
+  final Function function;
+  final Function function2;
+  const OptionComp({Key? key, required this.function, required this.function2})
+      : super(key: key);
 
   @override
   _OptionCompState createState() => _OptionCompState();
@@ -10,6 +13,7 @@ class OptionComp extends StatefulWidget {
 class _OptionCompState extends State<OptionComp> {
   bool pernah = false;
   bool tidakp = false;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -21,6 +25,7 @@ class _OptionCompState extends State<OptionComp> {
               if (pernah == false) {
                 pernah = true;
                 tidakp = false;
+                widget.function();
                 setState(() {});
               } else {
                 pernah = false;
@@ -58,6 +63,7 @@ class _OptionCompState extends State<OptionComp> {
               if (tidakp == false) {
                 tidakp = true;
                 pernah = false;
+                widget.function2();
                 setState(() {});
               } else {
                 tidakp = false;

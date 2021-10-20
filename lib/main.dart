@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:sinpeman_covid_19/res/res.dart';
 import 'package:sinpeman_covid_19/view/splash_screen.dart';
 
-void main() {
+Future<void> main() async {
   runApp(const MyApp());
+  await Init.init();
 }
 
 class MyApp extends StatelessWidget {

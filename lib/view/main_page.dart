@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:sinpeman_covid_19/components/data_table.dart';
+import 'package:sinpeman_covid_19/model/model_data.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -8,6 +11,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
+  Box<ModelData> databox = Hive.box<ModelData>("modeldata");
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -46,6 +50,38 @@ class _MainPageState extends State<MainPage> {
             ],
           ),
         ),
+        Expanded(
+            child: ListView(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(top: 20, left: 18, right: 18),
+              child: Card(
+                  child: SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Column(
+                        children: [
+                          DataTableDasboard(),
+                          ...databox.values.map((e) {
+                            var index = databox.values.toList().indexOf(e);
+                            return DataDasboard(
+                                no: (index + 1).toString(),
+                                nama: e.nama,
+                                tanggal: e.tanggal,
+                                hasil: () {},
+                                hapus: () {});
+                          })
+                          // DataDasboard(
+                          //   hapus: () {},
+                          //   hasil: () {},
+                          //   nama: "tes",
+                          //   no: "1",
+                          //   tanggal: "292",
+                          // )
+                        ],
+                      ))),
+            ),
+          ],
+        ))
       ],
     );
   }

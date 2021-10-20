@@ -37,6 +37,11 @@ dependencies:
   google_fonts: ^2.1.0
   bloc: ^7.2.1
   flutter_bloc: ^7.3.0
+  intl: ^0.17.0
+  hive_flutter: ^1.1.0
+  hive_generator: ^1.1.1
+  build_runner: ^2.1.4
+  path_provider: ^2.0.5
 
 dev_dependencies:
   flutter_test:
