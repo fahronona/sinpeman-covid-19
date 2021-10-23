@@ -36,7 +36,10 @@ class _DetailDataState extends State<DetailData> {
           titleForm(title: "Tanggal Screening", mrTop: 10),
           isiForm(title: widget.tanggal, mrTop: 5),
           titleForm(
-              title: "Gejala yang berhubungan dengan Covid-19", mrTop: 10),
+              title: widget.dataGejala.isEmpty
+                  ? ""
+                  : "Gejala yang berhubungan dengan Covid-19",
+              mrTop: 10),
           ...widget.dataGejala.map((e) {
             return isiForm(title: e, mrTop: 5);
           }),

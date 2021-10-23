@@ -18,7 +18,6 @@ class _MateriPageState extends State<MateriPage> {
     String dataIn =
         await DefaultAssetBundle.of(context).loadString("assets/materi.json");
     final jsonResultIn = json.decode(dataIn);
-    print(jsonResultIn);
     jsonResultIn["materi"].forEach((i) {
       materi.add(ModelMateri(i["judulMateri"], i["isiMateri"]));
     });
@@ -45,6 +44,7 @@ class _MateriPageState extends State<MateriPage> {
           return CardMateri(
             judul: e.title,
             subJudul: "materi ${e.title}",
+            materi: e.materi,
           );
         }),
       ],
