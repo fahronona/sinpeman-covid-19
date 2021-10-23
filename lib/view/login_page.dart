@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:sinpeman_covid_19/components/form_login.dart';
+import 'package:sinpeman_covid_19/firebase/firebase_auth.dart';
 import 'package:sinpeman_covid_19/view/botto_nav_bar.dart';
 import 'package:sinpeman_covid_19/view/register_page.dart';
 
@@ -44,19 +46,35 @@ class _LoginPageState extends State<LoginPage> {
             controller: passwordCtrl,
             hintText: "Masukan password",
             marTop: 30,
-            sufflixIcon: false,
+            sufflixIcon: true,
           ),
           Padding(
             padding: EdgeInsets.only(top: 40, right: 18, left: 18),
             child: Container(
               height: 48,
               child: ElevatedButton(
-                onPressed: () {
-                  Navigator.pushAndRemoveUntil(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const BottomNavBar()),
-                      (Route<dynamic> route) => false);
+                onPressed: () async {
+                  var daftar = await AuthService.singIn(
+                      emailCtrl.text, passwordCtrl.text);
+                  if (daftar == null) {
+                    // print('gagal');
+                    Fluttertoast.showToast(
+                        msg: "Terjadi kesalahan, coba lagi",
+                        toastLength: Toast.LENGTH_SHORT,
+                        gravity: ToastGravity.BOTTOM,
+                        timeInSecForIosWeb: 3);
+                  } else {
+                    Fluttertoast.showToast(
+                        msg: "Masuk Berhasil",
+                        toastLength: Toast.LENGTH_SHORT,
+                        gravity: ToastGravity.BOTTOM,
+                        timeInSecForIosWeb: 3);
+                    Navigator.pushAndRemoveUntil(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const BottomNavBar()),
+                        (Route<dynamic> route) => false);
+                  }
                 },
                 child: const Text("Masuk"),
               ),

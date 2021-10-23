@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "991589419550",
+    "project_id": "sinpeman-covid-19",
+    "storage_bucket": "sinpeman-covid-19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991589419550:android:4ec558d9c95a77da513c0f",
+        "android_client_info": {
+          "package_name": "com.psik.sinpeman_covid_19"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991589419550-ef18f8cll54p0u4jsljr5hvs5d3rpus6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxvDAA1YxDYaQU94Ol08pqqPHgspoLL98"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991589419550-ef18f8cll54p0u4jsljr5hvs5d3rpus6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
