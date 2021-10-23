@@ -111,3 +111,14 @@ Widget titleForm({String title = "-", double mrTop = 10}) {
         )),
   );
 }
+
+Widget isiForm({String title = "-", double mrTop = 10}) {
+  return Padding(
+    padding: EdgeInsets.only(top: mrTop, right: 18, left: 18),
+    child: Text(title,
+        style: const TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.normal,
+        )),
+  );
+}

@@ -1,0 +1,24 @@
+{
+    "materi":[
+        {
+            "judulMateri":"Pengertian Covid 19",
+            "isiMateri":"Severe acute respiratory syndrome coronavirus 2 (sars-cov-2) yang lebih dikenal dengan nama virus corona adalah jenis baru dari corona virus yang menular ke manusia. Virus ini bisa menyerang siapa saja, baik bayi, anak-anak, orang dewasa, lansia, ibu hamil, maupun ibu menyusui. Corona virus jenis baru yang ditemukan menyebabkan penyakit covid19. Infeksi virus ini di sebut covid19 dan pertama kali di temukan di kota wuhan, cina pada akhir desember 2019. Virus ini menular dengan cepat dan telah menyebar ke wilayah lain di cina dan beberapa negara, termasuk indonesia. "
+        },
+        {
+            "judulMateri":"Cara penularan covid-19",
+            "isiMateri":"1.Droplet. Covid19 ditularkan melalui droplet (percikan ketika orang batuk/berbicara) orang dengan covid19.\n2.Kontak erat. Cium tangan, jabat tangan, berpelukan, cipika-cipiki.\n3.Menyentuh permukaan benda yang terkontaminasi. Virus corona dapat bertahan pada permukaan benda mati berjam-jam sampai berhari-hari."
+        },
+        {
+            "judulMateri":"Cara Diagnosis covid-19",
+            "isiMateri":"Untuk menentukan apakah pasien terinfeksi virus corona, dokter akan menanyakan gejala yang dialami pasien. Dokter juga akan bertanya apakah pasien bepergian atau tinggal di daerah yang memiliki kasus infeksi virus corona sebelum gejala muncul.Guna memastikan diagnoda covid19, dokter akan melakukan pemeriksaan lanjutan berikut:\n-Uji sampel darah\n-Tes usap tenggorokan untuk meneliti sampel dahak (tes PCR)\n-Rontgen dada untuk mendeteksi infiltrat atau cairan di paru-paru."
+        },
+        {
+            "judulMateri":"Tanda dan gejala covid-19",
+            "isiMateri":"Mengalami salah saatu dari gejala dibawah ini, bukan berarti anda teerinfeksi virus corona.\n-Demam >38oC\n-Batuk, pilek, sakit, tenggorokan\n-Letih-lesu\n-Sesak napas."
+        },
+        {
+            "judulMateri":"Cara pencegahan covid-19",
+            "isiMateri":"a.Tinggal di rumah saja, Hindari berpergian, berkumpul-kumpul, rekreasi.\nb.Jaga jarak 2 meter, Jika terpaksa keluar  rumah, hindari berdekatan dengan orang lain, hindari tempat padat seperti pasar, kodangan, pertemuan dll.\nc.Gunakan masker  ketika berpergian, Pakai masker ketika  berpergian,sebaiknya masker  diganti 4 jam sekali.\nd.Sering cuci tangan, Cuci tangan dengan sabun akan mematikan virus dalam 20 menit.\nHindari menyentuh wajah, Jangan menyentuh wajah kecuali tangan anda sudah bersih (steril dari virus/cuci tangan).\nf.Rutin mandi setelah berpergian, Mandi akan membunuh virus corona yang menempel di tubuh.\ng.Hidup sehat, Berolah raga, makanan bergizi, buah2an, konsumsi vitamin C dan sejenisnya."
+        }
+    ]
+}

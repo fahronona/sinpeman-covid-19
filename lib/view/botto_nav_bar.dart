@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sinpeman_covid_19/bloc/bloc.dart';
 import 'package:sinpeman_covid_19/bloc/state.dart';
+import 'package:sinpeman_covid_19/view/about.dart';
 import 'package:sinpeman_covid_19/view/screening_page.dart';
 
 class BottomNavBar extends StatefulWidget {
@@ -54,10 +55,16 @@ class _BottomNavBarState extends State<BottomNavBar> {
             padding: const EdgeInsets.only(top: 10, left: 10, bottom: 10),
             child: Image.asset("assets/single_logo.png"),
           ),
-          actions: const [
+          actions: [
             Padding(
-              padding: EdgeInsets.only(top: 20, right: 20, bottom: 20),
-              child: Icon(Icons.info, color: Colors.white),
+              padding: EdgeInsets.only(top: 10, right: 20, bottom: 20),
+              child: IconButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => About()));
+                },
+                icon: Icon(Icons.info, color: Colors.white),
+              ),
             )
           ],
           backgroundColor: const Color(0xff1888FC),

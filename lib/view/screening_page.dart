@@ -330,12 +330,26 @@ class _ScreeningPageState extends State<ScreeningPage> {
                         input2 == "pernah" ||
                         input4 == "pernah") {
                       popPositif();
-                      databox.add(ModelData(namaCtrl.text, umurCtrl.text,
-                          tanggal, input1, input2, input3, input4));
+                      databox.add(ModelData(
+                          namaCtrl.text,
+                          umurCtrl.text,
+                          tanggal,
+                          input1,
+                          input2,
+                          input3,
+                          input4,
+                          "Terindikasi positif Covid 19"));
                     } else {
                       popNegatif();
-                      databox.add(ModelData(namaCtrl.text, umurCtrl.text,
-                          tanggal, input1, input2, input3, input4));
+                      databox.add(ModelData(
+                          namaCtrl.text,
+                          umurCtrl.text,
+                          tanggal,
+                          input1,
+                          input2,
+                          input3,
+                          input4,
+                          "Terindikasi negatif Covid 19"));
                     }
                   }
                 },

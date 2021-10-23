@@ -24,13 +24,14 @@ class ModelDataAdapter extends TypeAdapter<ModelData> {
       fields[4] as String,
       (fields[5] as List).cast<String>(),
       fields[6] as String,
+      fields[7] as String,
     );
   }
 
   @override
   void write(BinaryWriter writer, ModelData obj) {
     writer
-      ..writeByte(7)
+      ..writeByte(8)
       ..writeByte(0)
       ..write(obj.nama)
       ..writeByte(1)
@@ -44,7 +45,9 @@ class ModelDataAdapter extends TypeAdapter<ModelData> {
       ..writeByte(5)
       ..write(obj.input3)
       ..writeByte(6)
-      ..write(obj.input4);
+      ..write(obj.input4)
+      ..writeByte(7)
+      ..write(obj.hasil);
   }
 
   @override
